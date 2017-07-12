@@ -1,17 +1,30 @@
-#include "shell.h"
+#include <stdio.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
 
-int main(int argc, char *argv[])
+/**
+ * main - stat example
+ *
+ * Return: Always 0.
+ */
+int main(int ac, char **av)
 {
-	struct stat buf;
-	char mtime[100];
+    unsigned int i;
+    struct stat st;
 
-	stat("myfile.txt", &buf);
-
-	printf("st_mode = %o\n", buf.st_mode);
-
-	strcpy(mtime, ctime(&buf.st_mtime));
-
-	printf("st_mtime = %s\n", mtime);
-
-	return (0);
+    i = 1;
+    while (av[i])
+    {
+        printf("%s:", av[i]);
+        if (stat(av[i], &st) == 0)
+        {
+            printf(" FOUND\n");
+        }
+        else
+        {
+            printf(" NOT FOUND\n");
+        }
+        i++;
+    }
 }
