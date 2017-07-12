@@ -1,44 +1,42 @@
 #include "shell.h"
-/**
- * main - main function for shell
- *
- * Return : 0
- */
 int main(void)
 {
-	ssize_t w_comd, r_count;
-	size_t size;
-	char *buf;
+	char *buffer, *token, *argv[1024];
+	int value, status;
+	size_t buffer_size;
+	pid_t pid;
+	unsigned int i;
 
-	buf = NULL; /* getline()  mallocs memory with appropriate size
-		     * when buf == NULL
-		     */
-
-	if (write(STDOUT_FILENO, "$ ", 2) == -1)
+	write(STDOUT_FILENO, "$ ", 2);
+	
+	value = getline(&buffer, &buffer_size, stdin);
+	if (value == -1)
 	{
-		errno = EIO;
-		perror("write() cannot display prompt");
-		return (-1);
+		return (1);
 	}
 
-	r_count = getline(&buf, &size, stdin);
+	token = strtok(buffer, " ");
 
-	if (r_count == -1)
+	for (i = 0; token != NULL; i++)
 	{
-		errno = EIO;
-		perror("getline() cannot read input");
-		return (-1);
+		argv[i] = token;
+		token = strtok(NULL, " ");
 	}
+	argv[i] = NULL;
 
-	w_comd = write(STDOUT_FILENO, buf, r_count);
-	if (w_comd != r_count)
+	pid = fork();
+
+	if (pid < 0)
 	{
-		errno = EIO;
-		perror("write() cannot display input");
-		free(buf);
-		return (-1);
+		return (1);
 	}
-	free(buf);
-	return (0);
+	if (pid == 0)
+	{
+		execve(argv[0], argv, NULL);
+	}
+	else
+	{
+		wait(&status);	
+	}
+	return(1);
 }
-
