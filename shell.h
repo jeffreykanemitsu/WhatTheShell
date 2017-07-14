@@ -7,4 +7,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <sys/wait.h>
+
+char *_getenv(const char *name);
+extern char **environ;
 #endif

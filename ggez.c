@@ -7,36 +7,34 @@ int main(void)
 	pid_t pid;
 	unsigned int i;
 
-	write(STDOUT_FILENO, "$ ", 2);
+	write(STDOUT_FILENO, "$ ", 1);
 	
 	value = getline(&buffer, &buffer_size, stdin);
-	if (value == -1)
+	if (value != -1)
 	{
-		return (1);
-	}
+		token = strtok(buffer, " ");
 
-	token = strtok(buffer, " ");
+		for (i = 0; token != NULL; i++)
+		{
+			argv[i] = token;
+			token = strtok(NULL, " ");
+		}
+		argv[i] = NULL;
 
-	for (i = 0; token != NULL; i++)
-	{
-		argv[i] = token;
-		token = strtok(NULL, " ");
-	}
-	argv[i] = NULL;
+		pid = fork();
 
-	pid = fork();
-
-	if (pid < 0)
-	{
-		return (1);
+		if (pid < 0)
+		{
+			return (1);
+		}
+		if (pid == 0)
+		{
+			execve(argv[0], argv, NULL);
+		}
+		else
+		{
+			wait(&status);	
+		}
+		return(1);
 	}
-	if (pid == 0)
-	{
-		execve(argv[0], argv, NULL);
-	}
-	else
-	{
-		wait(&status);	
-	}
-	return(1);
 }
