@@ -103,6 +103,15 @@ $
 
 
 ### Installation ###
+* Be in the desired directory that you want this function to be in.
+* Go to https://github.com/tanyastropheus/simple_shell
+* Clone the repository
+
+![](http://imgur.com/I4YLqYM.gif)
+
+* Clone the repository into your terminal
+
+![](http://imgur.com/GcS292S.gif)
 
 ### Compilation ###
 Your shell will be compiled this way:
