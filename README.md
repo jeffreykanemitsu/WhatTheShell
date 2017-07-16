@@ -172,7 +172,7 @@ Your shell will be compiled this way:
 #### Mandatory 6 ####
 6. **Simple shell 1.0**
 * Simple shell 0.4 +
-	*[ ] Implement the `env` *built-in*, that prints the current environment
+	* [ ] Implement the `env` *built-in*, that prints the current environment
 #### Mandatory 7 ####
 7. **What happens when you type ls -l in the shell**
 * Write a blog post describing step by step what happens when you type `ls -l` and hit Enter in a shell. Try to explain every step you know of, going in as much details as you can, give examples and draw diagrams when needed. You should merge your previous knowledge of the shell with the specifics of how it works under the hoods (including syscalls).
