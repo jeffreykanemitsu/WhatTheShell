@@ -9,6 +9,8 @@
 	* [Authors](#Author)	
 	* [Description](#description)
 	* [Objectives](#objectives)
+	* [Output](#output)
+	* [Allowed Functions](#allowed-functions)
 	* [Installation](#installation)
 	* [Compilation](#compilation)
 	* [Requirements](#requirements)
@@ -111,7 +113,7 @@ $
 
 * Clone the repository into your terminal
 
-![](http://imgur.com/GcS292S.gif)
+![](http://imgur.com/BD2F4jM.gif)
 
 ### Compilation ###
 Your shell will be compiled this way:
