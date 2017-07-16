@@ -34,7 +34,7 @@
 Write a simple UNIX command interpreter.
 
 ### Objectives ###
-* Understand the followingd concepts:
+* Understand the following concepts:
 	* How does a shell work
 	* What is a pid and a ppid
 	* How to manipulate the environment of the current process
@@ -80,7 +80,7 @@ $
 * `free (man 3 free)`
 * `stat (__xstat) that(man 2 stat)`
 * `lstat (__lxstat) (man 2 lstat)`
-* `fstat ``(__fxstat) (man 2 fstat)`
+* `fstat (__fxstat) (man 2 fstat)`
 * `getcwd (man 3 getcwd)`
 * `getline (man 3 getline)`
 * `kill (man 2 kill)`
@@ -97,19 +97,12 @@ $
 * `wait3 (man 2 wait3)`
 * `wait4 (man 2 wait4)`
 * `write (man 2 write)`
-* ``_exit` `(man 2 _exit)``
+* `_exit (man 2 _exit)`
 * `isatty (man 3 isatty)`
 * `fflush (man 3 fflush)`
 
 
 ### Installation ###
-
-![](http://imgur.com/Ab6NxXs.gif)
-* Clone the respository into your terminal.
-
-![](http://imgur.com/BCHiNoy.gif)
-
-* Use "holberton.h" as the header file for this function in order to compile.
 
 ### Compilation ###
 Your shell will be compiled this way:
@@ -148,7 +141,7 @@ Your shell will be compiled this way:
 * You don't have to:
 	* use the `PATH`
 	* implement built-ins
-	* handle special characters:<code>&quot;</code>, <code>&#39;</code>, <code>`</code>, <code>\</code>, <code>*</code>, <code>&amp;</code>, <code>#</code></li>
+	* handle special characters:<code>&quot;</code>, <code>&#39;</code>, <code></code>, <code>\</code>, <code>`*`</code>, <code>&amp;</code>, <code>#</code></li>
 	* be able to move the cursor
 	* handle commands with arguments
 #### Mandatory 3 ####
@@ -166,10 +159,12 @@ Your shell will be compiled this way:
 	* [ ] Usage: `exit`
 	* [ ] You don't have to handle any argument to the built-in `exit`
 #### Mandatory 6 ####
+6. **Simple shell 1.0**
 * Simple shell 0.4 +
 	* Implement the `env` *built-in*, that prints the current environment
 #### Mandatory 7 ####
+7. **What happens when you type ls -l in the shell**
 * Write a blog post describing step by step what happens when you type `ls -l` and hit Enter in a shell. Try to explain every step you know of, going in as much details as you can, give examples and draw diagrams when needed. You should merge your previous knowledge of the shell with the specifics of how it works under the hoods (including syscalls).
 	* Have at least one picture, at the top of the blog post
 	* Public your blog post on Medium or LinkedIn
-	* Share your blog post at least on Twitter and LinkedIn
+	* Share your blog post at least on Twitter and LinkedIni
