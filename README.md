@@ -34,7 +34,7 @@
 Write a simple UNIX command interpreter.
 
 ### Objectives ###
-Understand the followingd concepts:
+* Understand the followingd concepts:
 	* How does a shell work
 	* What is a pid and a ppid
 	* How to manipulate the environment of the current process
@@ -70,36 +70,36 @@ $
 </code></pre>
 
 ### Allowed functions ###
-`access (man 2 access)`
-`chdir (man 2 chdir)</li>`
-`close (man 2 close)`
-`closedir (man 3 closedir)`
-`execve (man 2 execve)`
-`exit (man 3 exit)`
-`fork (man 2 fork)`
-`free (man 3 free)`
-`stat (__xstat) that(man 2 stat)`
-`lstat (__lxstat) (man 2 lstat)`
-`fstat ``(__fxstat) (man 2 fstat)`
-`getcwd (man 3 getcwd)`
-`getline (man 3 getline)`
-`kill (man 2 kill)`
-`malloc (man 3 malloc)`
-`open (man 2 open)`
-`opendir (man 3 opendir)`
-`perror (man 3 perror)`
-`read (man 2 read)`
-`readdir (man 3 readdir)`
-`signal (man 2 signal)`
-`strtok (man 3 strtok)`
-`wait (man 2 wait)`
-`waitpid (man 2 waitpid)`
-`wait3 (man 2 wait3)`
-`wait4 (man 2 wait4)`
-`write (man 2 write)`
-``_exit` `(man 2 _exit)``
-`isatty (man 3 isatty)`
-`fflush (man 3 fflush)`
+* `access (man 2 access)`
+* `chdir (man 2 chdir)</li>`
+* `close (man 2 close)`
+* `closedir (man 3 closedir)`
+* `execve (man 2 execve)`
+* `exit (man 3 exit)`
+* `fork (man 2 fork)`
+* `free (man 3 free)`
+* `stat (__xstat) that(man 2 stat)`
+* `lstat (__lxstat) (man 2 lstat)`
+* `fstat ``(__fxstat) (man 2 fstat)`
+* `getcwd (man 3 getcwd)`
+* `getline (man 3 getline)`
+* `kill (man 2 kill)`
+* `malloc (man 3 malloc)`
+* `open (man 2 open)`
+* `opendir (man 3 opendir)`
+* `perror (man 3 perror)`
+* `read (man 2 read)`
+* `readdir (man 3 readdir)`
+* `signal (man 2 signal)`
+* `strtok (man 3 strtok)`
+* `wait (man 2 wait)`
+* `waitpid (man 2 waitpid)`
+* `wait3 (man 2 wait3)`
+* `wait4 (man 2 wait4)`
+* `write (man 2 write)`
+* ``_exit` `(man 2 _exit)``
+* `isatty (man 3 isatty)`
+* `fflush (man 3 fflush)`
 
 
 ### Installation ###
@@ -135,9 +135,9 @@ Your shell will be compiled this way:
 	* [ ] Write a beautiful code that passes the Betty checks
 #### Mandatory 2 ####
 2. **Simple shell 0.1**
-Write a UNIX command line interpreter.
+* Write a UNIX command line interpreter.
 	* [ ] Usage: `simple_shell`
-Your Shell should:
+* Your Shell should:
 	* [ ] Display a prompt and wait for the user to type a command. A command line always ends with a new line.
 	* [ ] The prompt is displayed again each time a command has been executed.
 	* [ ] The command lines are simple, no semi-columns, no pipes, no redirections or any other advanced features
@@ -145,31 +145,31 @@ Your Shell should:
 	* [ ] If an executable cannot be found, print an error message and display the prompt again.
 	* [ ] Handle errors.
 	* [ ] You have to handle the "end of file" condition (`Ctrl+D`). Exit with code 0
-You don't have to:
+* You don't have to:
 	* use the `PATH`
 	* implement built-ins
-	* handle special characters:  ", ", \, `*`, &, #
+	* handle special characters:<code>&quot;</code>, <code>&#39;</code>, <code>`</code>, <code>\</code>, <code>*</code>, <code>&amp;</code>, <code>#</code></li>
 	* be able to move the cursor
 	* handle commands with arguments
 #### Mandatory 3 ####
 3. **Simple shell 0.2**
-Simple shell 0.1 +
+* Simple shell 0.1 +
 	* [ ] Handle command lines with arguments
 #### Mandatory 4 ####
 4. **Simple shell 0.3**
-Simple shell 0.2 +
+* Simple shell 0.2 +
 	* [ ] Handle the `PATH`
 #### Mandatory 5 ####
 5. **Simple shell 0.4**
-Simple shell 0.3 +
+* Simple shell 0.3 +
 	* [ ] Implement the `exit` built-in, that exits the shell
 	* [ ] Usage: `exit`
 	* [ ] You don't have to handle any argument to the built-in `exit`
 #### Mandatory 6 ####
-Simple shell 0.4 +
+* Simple shell 0.4 +
 	* Implement the `env` *built-in*, that prints the current environment
 #### Mandatory 7 ####
-Write a blog post describing step by step what happens when you type `ls -l` and hit Enter in a shell. Try to explain every step you know of, going in as much details as you can, give examples and draw diagrams when needed. You should merge your previous knowledge of the shell with the specifics of how it works under the hoods (including syscalls).
+* Write a blog post describing step by step what happens when you type `ls -l` and hit Enter in a shell. Try to explain every step you know of, going in as much details as you can, give examples and draw diagrams when needed. You should merge your previous knowledge of the shell with the specifics of how it works under the hoods (including syscalls).
 	* Have at least one picture, at the top of the blog post
 	* Public your blog post on Medium or LinkedIn
 	* Share your blog post at least on Twitter and LinkedIn
