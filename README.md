@@ -150,11 +150,11 @@ Your shell will be compiled this way:
 	* [ ] Handle errors.
 	* [ ] You have to handle the "end of file" condition (`Ctrl+D`). Exit with code 0
 * You don't have to:
-	* use the `PATH`
-	* implement built-ins
-	* handle the special characters: `"`, `'`, `` ` ``, `` \ ``, `*`, `&`, `#`
-	* be able to move the cursor
-	* handle commands with arguments
+	* Use the `PATH`
+	* Implement built-ins
+	* Handle the special characters: `"`, `'`, `` ` ``, `` \ ``, `*`, `&`, `#`
+	* Be able to move the cursor
+	* Handle commands with arguments
 #### Mandatory 3 ####
 3. **Simple shell 0.2**
 * Simple shell 0.1 +
@@ -172,10 +172,10 @@ Your shell will be compiled this way:
 #### Mandatory 6 ####
 6. **Simple shell 1.0**
 * Simple shell 0.4 +
-	* Implement the `env` *built-in*, that prints the current environment
+	*[ ] Implement the `env` *built-in*, that prints the current environment
 #### Mandatory 7 ####
 7. **What happens when you type ls -l in the shell**
 * Write a blog post describing step by step what happens when you type `ls -l` and hit Enter in a shell. Try to explain every step you know of, going in as much details as you can, give examples and draw diagrams when needed. You should merge your previous knowledge of the shell with the specifics of how it works under the hoods (including syscalls).
-	* Have at least one picture, at the top of the blog post
-	* Public your blog post on Medium or LinkedIn
-	* Share your blog post at least on Twitter and LinkedIni
+	* [ ] Have at least one picture, at the top of the blog post
+	* [ ] Public your blog post on Medium or LinkedIn
+	* [ ] Share your blog post at least on Twitter and LinkedIni
