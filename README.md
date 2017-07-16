@@ -141,7 +141,7 @@ Your shell will be compiled this way:
 * You don't have to:
 	* use the `PATH`
 	* implement built-ins
-	* handle special characters:<code>&quot;</code>, <code>&#39;</code>, <code></code>, <code>\</code>, <code>`*`</code>, <code>&amp;</code>, <code>#</code></li>
+	* handle the special characters: `"`, `'`, `` ` ``, `` \ ``, `*`, `&`, `#`
 	* be able to move the cursor
 	* handle commands with arguments
 #### Mandatory 3 ####
