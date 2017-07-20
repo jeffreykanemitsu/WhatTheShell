@@ -31,7 +31,7 @@ int _env(char *envp[])
 	{
 		for (y = 0; envp[x][y] != '\0'; y++)
 		{
-			write(STDOUT_FILENO, &envp[x][y], 1);
+			write(STDOUT_FILENO, &envp[x][y], 3);
 		}
 		write (STDOUT_FILENO, "\n", 1);
 	}
