@@ -25,15 +25,13 @@ int find_builtins(char *str)
 
 int _env(char *envp[])
 {
-	int x, y;
+	int x;
 
-	for (x = 0; envp[x] != '\0'; x++)
+	while (envp[x] != NULL)
 	{
-		for (y = 0; envp[x][y] != '\0'; y++)
-		{
-			write(STDOUT_FILENO, &envp[x][y], 3);
-		}
+		write(STDOUT_FILENO, envp[x], 1);
 		write (STDOUT_FILENO, "\n", 1);
+		x++;
 	}
 	return (0);
 }
