@@ -1,5 +1,5 @@
 #include "shell.h"
-int main(void)
+int _env(void)
 {
 	int x, y;
 
