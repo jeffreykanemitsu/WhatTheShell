@@ -26,11 +26,11 @@
 
 ### Authors ###
 * Jeffrey Kanemitsu
-	* [Github] (https://github.com/jeffreykanemitsu)
-	* [Twitter] (https://twitter.com/canofmisosoup)
+	* [Github](https://github.com/jeffreykanemitsu)
+	* [Twitter](https://twitter.com/canofmisosoup)
 * Tanya Kryukova
-	* [Github] (https://github.com/tanyastropheus)
-	* [Twitter] (https://twitter.com/tyastropheus)
+	* [Github](https://github.com/tanyastropheus)
+	* [Twitter](https://twitter.com/tyastropheus)
 
 ### Description ###
 The Thompsan Shell is the first UNIX shell which was introduced in the first version of Unix in 1971, written by Ken Thompson. This shell is our own implementation of a simple UNIX command interpreter. The shell executes the commands a user enters. Our version of the shell does not have full access to all commands available but includes built-ins: env and exit. 
